@@ -1,0 +1,94 @@
+.resume {
+  padding-top: 120px;
+  &__title {
+    text-align: center;
+    position: relative;
+    @include before_circle;
+    &:before {
+      top: 6;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__wrapper {
+    padding: 60px 65px 0 65px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 135px;
+  }
+  &__column {
+    &-title {
+      position: relative;
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 35px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -7px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &:after {
+          content: "";
+          width: 1px;
+          height: calc(100% + 5px);
+          position: absolute;
+          top: -8px;
+          left: 0;
+          background-color: black;
+        }
+      }
+    }
+  }
+  &__item {
+    position: relative;
+    &:before {
+      content: "";
+      height: 1px;
+      width: 45px;
+      position: absolute;
+      background-color: black;
+      top: 68px;
+    }
+    &-head {
+      position: relative;
+      padding: 45px 0 0 100px;
+      margin: 0;
+    }
+    &-body {
+      padding: 12px 0 0 43px;
+    }
+    &-icon {
+      position: absolute;
+      top: 50px;
+      left: 45px;
+      @include before-circle;
+      img {
+        position: absolute;
+        left: 17px;
+        top: 14px;
+      }
+    }
+    &-location {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-body {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

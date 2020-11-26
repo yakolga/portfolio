@@ -1,0 +1,23 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+@import "base/variables";
+@import "base/mixins";
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/sidepanels";
+@import "blocks/about";
+@import "blocks/hamburger";
+@import "blocks/resume";
+@import "blocks/skills";
+@import "blocks/portfolio";
+@import "blocks/prices";
+@import "blocks/contacts";
